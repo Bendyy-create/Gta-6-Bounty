@@ -274,5 +274,12 @@ async function signIn() {
     error ? error.message : "Connexion réussie !";
 }
 </script>
+  <script>
+document.querySelectorAll('#auth-section button').forEach(button => {
+  button.addEventListener('click', function() {
+    console.log("Bouton BOUNTY cliqué !");
+  });
+});
+</script>
 </body>
 </html>
